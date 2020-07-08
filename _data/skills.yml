@@ -1,0 +1,17 @@
+- name: Java 技术栈
+  keywords:
+      - Spring
+      - SpringMVC
+      - Spring Boot
+      - MyBatis
+      - Hadoop
+
+- name: Python 技术栈
+  keywords:
+      - TensorFlow
+      - OpenCV
+
+- name: 数据库
+  keywords:
+      - MySQL
+      - MongoDB

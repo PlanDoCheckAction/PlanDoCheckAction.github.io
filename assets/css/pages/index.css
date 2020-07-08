@@ -1,0 +1,48 @@
+.home .site-header {
+    background: #389a58;
+    color: #fff
+}
+
+.home .banner {
+    background: #389a58;
+    color: #fff;
+    background-image: url(../../../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+
+.home .banner .collection-head {
+    color: #fff;
+    background: 0 0;
+    box-shadow: none;
+    -webkit-box-shadow: none
+}
+
+.home .site-header {
+    border-bottom: none
+}
+
+.home .site-header h1 a {
+    color: #fff
+}
+
+.home .site-header .site-header-nav-item {
+    color: rgba(255, 255, 255, .5)
+}
+
+.home .site-header .site-header-nav-item:hover {
+    color: #fff
+}
+
+
+@media (max-width:50em) {
+  .home .collapsed .icon-bar {
+    background-color: white;
+  }
+
+  .home .collection-head .collection-header {
+    font-size: 1.25em;
+  }
+
+}
