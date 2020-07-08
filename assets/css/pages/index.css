@@ -1,15 +1,7 @@
+.home .banner,
 .home .site-header {
-    background: #389a58;
+    background: #4183c4;
     color: #fff
-}
-
-.home .banner {
-    background: #389a58;
-    color: #fff;
-    background-image: url(../../../images/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position:center center;
 }
 
 .home .banner .collection-head {
@@ -44,5 +36,4 @@
   .home .collection-head .collection-header {
     font-size: 1.25em;
   }
-
 }
