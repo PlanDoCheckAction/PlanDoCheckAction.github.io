@@ -1,6 +1,14 @@
-.home .banner,
+.home .banner {
+    background: #389a58;
+    color: #fff;
+    background-image: url(../../../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+}
+
 .home .site-header {
-    background: #4183c4;
+    background: #389a58;
     color: #fff
 }
 
