@@ -6,7 +6,7 @@
 .home .banner {
     background: #389a58;
     color: #fff;
-    background-image: url(../../../images/bg.jpg);
+    background-image: url(../../../images/BGI.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center center;
@@ -44,4 +44,5 @@
   .home .collection-head .collection-header {
     font-size: 1.25em;
   }
+  
 }
