@@ -4,4 +4,4 @@
 
 ## 致谢
 
-本博客 Fork 「码志」(https://mazhuang.org)，非常感谢！
+本博客 Fork 「码志」<https://mazhuang.org>，非常感谢！
