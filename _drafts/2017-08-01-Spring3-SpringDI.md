@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring-（3）Spring DI
-categories: [Java, Spring]
+categories: Java
 description: Spring DI
 keywords: Java, Spring
 ---
@@ -106,9 +106,9 @@ public class MainAPP {
 
 控制台输出下面两句话我们就成功啦！
 
-![](..\images\posts\java\Spring-3-Print1.png)
+![](/images/posts/java/Spring-3-Print1.png)
 
-但为什么我们拿得是Company对象会输出两句话呢？
+但为什么我们拿得是 Company 对象会输出两句话呢？
 
 这是因为当我们从 IOC 容器中取 Company 时，IOC 帮我们先把 Person 初始化了一遍，所以我们会看到控制台会先输出一句「我是人，我说了一句话！」
 
@@ -237,7 +237,7 @@ public class MainAPP {
 
 输出结果如下：
 
-![](..\images\posts\java\Spring-3-Print2.png)
+![](/images/posts/java/Spring-3-Print2.png)
 
 我们可以看到以下区别：
 - list 的列值是可以重复的；

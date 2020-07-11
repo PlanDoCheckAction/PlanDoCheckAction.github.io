@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring-（5）Spring AOP
-categories: [Java, Spring]
+categories: Java
 description: Spring AOP
 keywords: Java, Spring
 ---
@@ -163,7 +163,7 @@ public class MainAPP {
 
 控制台输出：
 
-![](..\images\posts\java\Spring-5-Print1.png)
+![](/images/posts/java/Spring-5-Print1.png)
 
 ------------------------------------
 ## Spring 中基于 AOP 的 @AspectJ
@@ -267,7 +267,7 @@ public class MainAPP {
 
 最后控制台输出：
 
-![](..\images\posts\java\Spring-5-Print2.png)
+![](/images/posts/java/Spring-5-Print2.png)
 
 ------------------------------------
 

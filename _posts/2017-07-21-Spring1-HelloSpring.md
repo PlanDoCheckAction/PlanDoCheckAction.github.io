@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring-（1）HelloSpring
-categories: [Java, Spring]
+categories: Java
 description: 初识 Spring
 keywords: Java, Spring
 ---
@@ -27,7 +27,7 @@ Spring 框架的核心特性可以用于开发任何 Java 应用程序，但是�
 -------------------
 现在我们来自己动手写一个入门 Demo，首先我们创建一个Demo项目示例。
 
-![](..\images\posts\java\Spring-1-DemoCatalog.png)
+![](/images/posts/java/Spring-1-DemoCatalog.png)
 
 我这边创建了一个 HelloSpring 的 Demo，然后我们导入相应的包，这里我们要用到 Spring 的 jar 包，Spring 的 jar 包可以到 Spring 的官网下载。
 
@@ -39,7 +39,7 @@ Spring 框架的核心特性可以用于开发任何 Java 应用程序，但是�
 
  这里是需要导入的 jar 包（提示：第一个包是要自己下的，百度可以搜到。  PS：不是给百度打广告）：
 
- ![](..\images\posts\java\Spring-1-Jar.png)
+ ![](/images/posts/java/Spring-1-Jar.png)
 
 导入 jar 包后就开始写 Demo 了。
 
@@ -98,4 +98,4 @@ public class MainAPP {
 -------------------
 运行main方法，如果控制台打印出「Hello Spring !」则表示 Spring 入门的 Demo 就算成功了！
 
-![](..\images\posts\java\Spring-1-Print.png)
+![](/images/posts/java/Spring-1-Print.png)

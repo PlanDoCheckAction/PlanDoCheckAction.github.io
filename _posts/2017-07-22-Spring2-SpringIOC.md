@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring-（2）Spring IOC
-categories: [Java, Spring]
+categories: Java
 description: Spring IOC
 keywords: Java, Spring
 ---
@@ -21,7 +21,7 @@ IOC—Inversion of Control，即「控制反转」，不是什么技术，而是
 ----------------------------
 这是 Spring 官方文档上对 Spring IOC 容器的描述：
 
-![](..\images\posts\java\Spring-2-IOC.png)
+![](/images/posts/java/Spring-2-IOC.png)
 
 这个意思是将 Java 的 POJO 类注入到 Spring 的 IOC 容器中，然后容器利用 Java 的 POJO 类和配置元数据来生成完全配置和可执行的系统或应用程序，如果我们需要一个对象，我们只需要告诉 IOC 容器，然后 IOC 容器就会帮我 new 一个对象，这就是 IOC 容器的作用。
 
@@ -43,7 +43,7 @@ IOC—Inversion of Control，即「控制反转」，不是什么技术，而是
 
 我们来看一个例子：
 
-![](..\images\posts\java\Spring-2-DemoCatalog1.png)
+![](/images/posts/java/Spring-2-DemoCatalog1.png)
 
 HelloSpring是一个POJO类（直接贴源代码）：
 
@@ -97,7 +97,7 @@ public class MainAPP {
 
 然后打印结果成功！
 
-![](..\images\posts\java\Spring-2-Print.png)
+![](/images/posts/java/Spring-2-Print.png)
 
 Spring BeanFactory 容器到这里就差不多结束了！
 
@@ -105,7 +105,7 @@ Spring BeanFactory 容器到这里就差不多结束了！
 ### Spring ApplicationContext 容器
 Spring ApplicationContext 容器也很简单，我们在 Spring-（1）HelloSpring 的例子中用的就是 ApplicationContext（节约时间，废话不多说，直接贴代码（其实是自己懒不想打字！））。
 
-![](..\images\posts\java\Spring-2-DemoCatalog2.png)
+![](/images/posts/java/Spring-2-DemoCatalog2.png)
 
 看一下目录结构，HelloSpring 类，Beans.xml 与上面用到的例子是一样的，我们直接看一下 Main 中不一样的部分。
 

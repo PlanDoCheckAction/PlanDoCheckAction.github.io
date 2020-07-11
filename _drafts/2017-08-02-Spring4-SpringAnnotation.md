@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring-（4）Spring 注解
-categories: [Java, Spring]
+categories: Java
 description: Spring 注解
 keywords: Java, Spring
 ---
@@ -270,5 +270,5 @@ public class MainAPP {
 --------------------------
 最后，控制台输出：
 
-![](..\images\posts\java\Spring-4-Print.png)
+![](/images/posts/java/Spring-4-Print.png)
 
