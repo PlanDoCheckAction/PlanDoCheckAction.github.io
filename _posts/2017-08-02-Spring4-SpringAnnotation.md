@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring-（4）Spring 注解
-categories: Java
+categories: Spring
 description: Spring 注解
 keywords: Java, Spring
 ---

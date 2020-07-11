@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring-（2）Spring IOC
-categories: Java
+categories: Spring
 description: Spring IOC
 keywords: Java, Spring
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring-（1）HelloSpring
-categories: Java
+categories: Spring
 description: 初识 Spring
 keywords: Java, Spring
 ---

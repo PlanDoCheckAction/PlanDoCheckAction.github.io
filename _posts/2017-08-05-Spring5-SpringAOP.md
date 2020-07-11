@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring-（5）Spring AOP
-categories: Java
+categories: Spring
 description: Spring AOP
 keywords: Java, Spring
 ---

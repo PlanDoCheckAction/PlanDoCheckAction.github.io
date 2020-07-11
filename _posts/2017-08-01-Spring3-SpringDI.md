@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spring-（3）Spring DI
-categories: Java
+categories: Spring
 description: Spring DI
 keywords: Java, Spring
 ---
