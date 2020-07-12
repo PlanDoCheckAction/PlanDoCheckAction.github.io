@@ -62,7 +62,7 @@ public class HelloSpring {
 }
 ```
 
-Bean.xml(关于基本的配置我已经在[Spring-（1）HelloSpring](/_posts/2017-07-21-Spring1-HelloSpring.md)中讲到了，废话不多说，直接贴代码)
+Bean.xml(关于基本的配置我已经在[Spring-（1）HelloSpring](/2017/07/21/Spring1-HelloSpring)中讲到了，废话不多说，直接贴代码)
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
