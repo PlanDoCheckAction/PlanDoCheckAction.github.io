@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Meet Big Data
-categories: Big Data
+categories: [Big Data]
 description: Meet Big Data
 keywords: Big Data
 ---
