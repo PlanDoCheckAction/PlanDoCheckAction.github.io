@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Meet Big Data
+title: Hadoop 之 CentOS7 集群搭建
 categories: [Big Data]
-description: Meet Big Data
-keywords: Big Data
+description: Hadoop 之 CentOS7 集群搭建
+keywords: Big Data, Linux
 ---
 
 # Hadoop 环境搭建（一）

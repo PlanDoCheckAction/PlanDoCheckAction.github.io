@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Meet Big Data
+title: Hadoop 完全分布式环境搭建
 categories: [Big Data]
-description: Meet Big Data
-keywords: Big Data
+description: Hadoop 完全分布式环境搭建
+keywords: Big Data, Hadoop
 ---
 
 # Hadoop 环境搭建(二)

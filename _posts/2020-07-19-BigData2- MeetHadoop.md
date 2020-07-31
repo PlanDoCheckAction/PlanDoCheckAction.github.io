@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Meet Big Data
+title: Meet Hadoop
 categories: [Big Data]
-description: Meet Big Data
-keywords: Big Data
+description: Meet Hadoop
+keywords: Big Data, Hadoop
 ---
 
 # 初识 Hadoop
