@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HDFS 的 Shell 操作
+title: HDFS 的 操作（一）
 categories: [Big Data]
 description: Hadoop 之 HDFS
 keywords: Big Data, Hadoop, HDFS
