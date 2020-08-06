@@ -12,17 +12,17 @@ keywords: Big Data, Hadoop, HDFS
 
 首先，我们要对 HDFS 进行读写操作的话，我们得先开启一个客户端（Client），因为用户只能通过客户端来进行对 HDFS 的读写操作，如下图所示。
 
-![](../images/posts/hadoop/BigData5-HDFSArchitecture.png)
+![](/images/posts/hadoop/BigData5-HDFSArchitecture.png)
 
 用命令的方式对 HDFS 进行文件的上传或下载之前，我们得先开启一个客户端。
 
 客户端的命令在 hadoop/bin 目录下。
 
-![](../images/posts/hadoop/BigData6-HDFSClientCommand.png)
+![](/images/posts/hadoop/BigData6-HDFSClientCommand.png)
 
 **注：.cmd 结尾的命令是 Window 操作系统下对应的命令。**
 
-![](../images/posts/hadoop/BigData6-HadoopFSCommand1.png)
+![](/images/posts/hadoop/BigData6-HadoopFSCommand1.png)
 
 打开 hadoop 命令可以看到这么一句话：
 
@@ -32,7 +32,7 @@ fs   run a generic filesystem user client
 
 然后我们再进到 hadoop fs 命令中看一下：
 
-![](../images/posts/hadoop/BigData6-HadoopFSCommand2.png)
+![](/images/posts/hadoop/BigData6-HadoopFSCommand2.png)
 
 可以看到，HDFS 对文件或目录的操作与 Linux 对文件或目录的操作基本一样，只是前面添加了 hadoop fs 而已。
 
@@ -48,11 +48,11 @@ hadoop fs -mkdir 路径+目录名
 
 **注：所有有关在 HDFS 上的路径均是从根目录开始的绝对路径。**
 
-![](../images/posts/hadoop/BigData6-HDFSMKDIR1.png)
+![](/images/posts/hadoop/BigData6-HDFSMKDIR1.png)
 
 从 hadoop fs -ls / 中我们可以看到 HDFS 的抽象根目录下已经创建了一个 newDir01 子目录，除了使用命令的方式去查看，我们也可以使用 Web 端查看：
 
-![](../images/posts/hadoop/BigData6-HDFSMKDIR2.png)
+![](/images/posts/hadoop/BigData6-HDFSMKDIR2.png)
 
 ------------------------------
 
@@ -101,7 +101,7 @@ public static void main(String[] args) throws URISyntaxException, IOException, I
 
 创建完成后，我们可以在 Web 端查看是否创建成功：
 
-![](../images/posts/hadoop/BigData6-HDFSMKDIR3.png)
+![](/images/posts/hadoop/BigData6-HDFSMKDIR3.png)
 
 ------------------------------
 
@@ -109,6 +109,6 @@ public static void main(String[] args) throws URISyntaxException, IOException, I
 
 假设我们已经从本地上传了一个文件 hadoop.tar.gz 到 HDFS 的 /newDir01/ 目录下，这时我们就可以通过 Web 端查看文件的详细信息了：
 
-![](../images/posts/hadoop/BigData6-HDFSPUT1.png)
+![](/images/posts/hadoop/BigData6-HDFSPUT1.png)
 
-![](../images/posts/hadoop/BigData6-HDFSPUT2.png)
+![](/images/posts/hadoop/BigData6-HDFSPUT2.png)

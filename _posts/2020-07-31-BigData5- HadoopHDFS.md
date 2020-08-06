@@ -51,7 +51,7 @@ HDFS 适合的使用场景：一次写入，多次读出的场景。所以 HDFS 
 
 下图是官网给出的 HDFS 的组成结构：
 
-![](../images/posts/hadoop/BigData5-HDFSArchitecture.png)
+![](/images/posts/hadoop/BigData5-HDFSArchitecture.png)
 
 从官网给出的图片来看，我们可以知道 HDFS 是一个主从架构，即一个主节点，多个从节点的设置，也可以看出 HDFS 是以何种形式存储数据的。HDFS 正常启动的时候是有三个进程的，分别是：NameNode、DataNode 和 SecondaryNameNode。
 
@@ -65,7 +65,7 @@ NameNode 主要用于存储元数据和处理客户端的读写请求。
 
 首先讲一下什么是「抽象目录树」，下图是启动 HDFS 后的集群相关的页面，进入导航栏的 Utilities->Browse the file system，我们可以看到一个类似于 Linux 的文件目录结构。
 
-![](../images/posts/hadoop/BigData5-BrowseDirectory.png)
+![](/images/posts/hadoop/BigData5-BrowseDirectory.png)
 
 但为什么要叫「抽象目录树」呢？这是因为在 HDFS 上的文件，是分块分布在多个节点上，而这个目录所显示的是一个整体，但底层却是多个节点协同存储，所以是抽象出来的目录而不是真正意义上的单节点目录。
 
