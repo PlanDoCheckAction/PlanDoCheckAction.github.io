@@ -8,8 +8,10 @@ keywords: Big Data, Hadoop, HDFS
 
 ## DN 与 NN 的通信工作机制
 
-![](../images/posts/hadoop/BigData9-NNAndDN.png)
+![](/images/posts/hadoop/BigData9-NNAndDN.png)
+
+
 
 ## NN 与 2NN 的通信工作机制
 
-![](../images/posts/hadoop/BigData9-NNAnd2NN.png)
+![](/images/posts/hadoop/BigData9-NNAnd2NN.png)
