@@ -37,7 +37,7 @@ MapReduce 核心功能是将**用户编写的业务逻辑代码**和**自带默�
 
 如下图所示，我们将 Input 的两个存有单词的文件输入到 MapReduce 程序中去计算出每个单词的单词个数，并将结果按首字母 A-H 和 I-Z 分成两个文件输出。
 
-![](../images/posts/bigdata/../hadoop/BigData10-MapReduceProcess.png)
+![](/images/posts/bigdata/../hadoop/BigData10-MapReduceProcess.png)
 
 如上图所示，MapReduce 的计算过程一般可分为 Map 阶段和 Reduce 阶段，Map 阶段主要是做分的操作，在词频统计的任务中，Map 就是将每个 maptask 中的单词按 key/value 分为 <单词, 1> 的形式，；而 Reduce 阶段就是将 Map 阶段传来的 key/value 按相同的 key 进行汇总为 key/value**s** 的形式，由于我们要分成只有首字母 A-H 和 I-Z 的两个文件，所以我们在 Reduce 阶段会分成两个 reducetask，每个 reducetask 只将自己当作的单词汇总，然后输出成文件形式。
 
