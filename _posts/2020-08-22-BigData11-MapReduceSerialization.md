@@ -50,7 +50,7 @@ Hadoop 序列化特点：
 此例的需求：统计每一个手机耗费的总上行流量、总下行流量、总流量。
 
 1. 输入数据：
-![](../images/posts/hadoop/BigData11-PhoneData.png)
+![](/images/posts/hadoop/BigData11-PhoneData.png)
 
 2. 输入数据的格式：
 ```
@@ -233,4 +233,4 @@ public class FlowCountDriver {
 
 ### 输出结果
 
-![](../images/posts/hadoop/BigData11-Result.png)
+![](/images/posts/hadoop/BigData11-Result.png)
