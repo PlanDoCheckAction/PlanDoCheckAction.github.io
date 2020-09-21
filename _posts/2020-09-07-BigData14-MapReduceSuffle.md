@@ -20,7 +20,7 @@ maptask 的结果会先输出到环形缓冲区中，即在 map() 方法中，�
 
 **注：元数据的长度固定，为 16*4 = 64 字节。**
 
-![](../images/posts/hadoop/BigData14-Byte[]1.png)
+![](/images/posts/hadoop/BigData14-Byte[]1.png)
 
 其实环形缓冲区本质上就是一个逻辑上首尾相连的字节数组。
 
@@ -30,27 +30,27 @@ maptask 的结果会先输出到环形缓冲区中，即在 map() 方法中，�
 
 **注：如果在数据写入到磁盘的过程中，另外剩余的空闲空间也被写满，则会进入阻塞状态，阻塞到以上数据全部写入磁盘、空间释放。**
 
-![](../images/posts/hadoop/BigData14-Byte[]2.png)
+![](/images/posts/hadoop/BigData14-Byte[]2.png)
 
 由于缓冲区是根据一个数组位置向两边写的，又因为所以我们写入缓冲区的数据量达到其阈值时会被溢写到磁盘，所以我们每次溢写后就要改变元数据和原始数据的起始写入位置，所以也就出现了需要标明起始位置的属性参数（equator）。
 
-![](../images/posts/hadoop/BigData14-Byte[]3.png)
+![](/images/posts/hadoop/BigData14-Byte[]3.png)
 
 ## Map 阶段的 Suffle 过程
 
 假设我们有一个 500M 的文件数据存放在 HDFS 上，这个文件的四个切片分别存放在其分布式集群的三个节点上。
 
-![](../images/posts/hadoop/BigData14-MapSuffle1.png)
+![](/images/posts/hadoop/BigData14-MapSuffle1.png)
 
 当启动 MapReduce 程序的时候，默认一个切片（128M）开启一个 maptask 进程，所以则会开启四个 maptask 进程，每个 maptask 最后都写入到各自的环形缓冲区中、互不干扰。
 
 当每个 maptask 向环形缓冲区写入直到触发溢写操作时，环形缓冲区会向磁盘进行溢写，在向磁盘进行溢写之前，环形缓冲区会先将里面的内容进行分区、排序，分区排序均按照快速排序进行。
 
-![](../images/posts/hadoop/BigData14-MapSuffle2.png)
+![](/images/posts/hadoop/BigData14-MapSuffle2.png)
 
 每个 maptask 的写出一般会导致环形缓冲区多次溢写，从而产生多个溢写文件，这些溢写文件均已经分好区排好序了，由于 Reduce 阶段是接收一整个文件作为输入，所以这多个溢写文件还要再进行一次合并，这次的合并采用的是归并排序的算法。
 
-![](../images/posts/hadoop/BigData14-MapSuffle3.png)
+![](/images/posts/hadoop/BigData14-MapSuffle3.png)
 
 由此 Map 端的 Suffle 过程就结束了，其中每个数据总共进行了两次快速排序（分区、分区内排序）和一次归并排序（溢写文件合并）。
 
@@ -58,12 +58,12 @@ maptask 的结果会先输出到环形缓冲区中，即在 map() 方法中，�
 
 Reduce 端的 Suffle 过程就比较简单了，由上我们可以知道，四个切片启动了四个 maptask，最后生成四个合并后的溢写文件，合并后的溢写文件内部已分好区排好序了。
 
-![](../images/posts/hadoop/BigData14-ReduceSuffle1.png)
+![](/images/posts/hadoop/BigData14-ReduceSuffle1.png)
 
 当 maptask 全部结束后，每一个 reducetask 会开启五个线程进行数据抓取，数据的抓取按照分区进行。
 
-![](../images/posts/hadoop/BigData14-ReduceSuffle2.png)
+![](/images/posts/hadoop/BigData14-ReduceSuffle2.png)
 
 假设以下这个 redecetask 是处理分区为 1 的数据，则此 redecetask 会开启线程去抓取这些包含有分区 1 的数据，然后再将他们合并一次，此次合并也是使用归并排序，然后再将合并后的文件根据分组组件的规则发送给 redecetask 作为输入，最后 redecetask 中的 context.write() 将最终的结果输出到 HDFS 上。
 
-![](../images/posts/hadoop/BigData14-ReduceSuffle3.png)
+![](/images/posts/hadoop/BigData14-ReduceSuffle3.png)
